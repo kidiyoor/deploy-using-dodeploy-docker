@@ -1,0 +1,4 @@
+---
+cmd:
+  - docker build -t flask-sample:latest .
+  - docker kill flask && docker rm flask && docker run -d --name flask -p 5000:5000 flask-sample | ls
